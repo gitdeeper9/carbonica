@@ -1,0 +1,11 @@
+CARBONICA ALERT
+Level: WARNING
+Time: 2026-03-13 09:16:23
+Message: PCSI = 0.780 in transitional zone
+
+Current Status:
+PCSI: 0.780
+F_perma: 1.71 PgC/yr
+beta: 0.081
+
+Action Required: Monitor closely

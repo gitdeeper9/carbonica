@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: "If you use CARBONICA in your research, please cite it as below."
+title: "CARBONICA: Advanced Planetary Carbon Accounting & Feedback Dynamics"
+version: 1.0.0
+doi: 10.5281/zenodo.18995446
+date-released: 2026-03-13
+url: "https://github.com/gitdeeper9/carbonica"
+repository-code: "https://github.com/gitdeeper9/carbonica.git"
+license: MIT
+
+authors:
+  - family-names: Baladi
+    given-names: Samir
+    email: gitdeeper@gmail.com
+    orcid: "https://orcid.org/0009-0003-8903-0029"
+    affiliation: "Ronin Institute / Rite of Renaissance"
+
+keywords:
+  - "carbon cycle"
+  - "climate science"
+  - "earth system"
+  - "biogeochemistry"
+  - "permafrost"
+  - "ocean carbon"
+  - "revelle factor"
+  - "photosynthesis"
+  - "carbon budget"
+  - "planetary boundaries"
+
+abstract: |
+  CARBONICA (Carbon Accounting and Regulatory Budget Observatory for Networked 
+  Integrated Carbon Assessment) is a physically rigorous eight-parameter framework 
+  for real-time quantification of global carbon cycle dynamics, natural sink 
+  capacity, and the critical threshold at which Earth's self-regulating 
+  biogeochemical systems approach saturation.
+  
+  The framework integrates eight governing parameters into the Planetary Carbon 
+  Saturation Index (PCSI): Net Primary Productivity (NPP), Oceanic Carbon Sink 
+  Strength (S_ocean), Atmospheric CO₂ Growth Rate (G_atm), Permafrost Thaw Flux 
+  (F_perma), Carbon Buffer Capacity (β, the Revelle Factor inverse), Soil Carbon 
+  Residence Time (τ_soil), Anthropogenic Emission Factor (E_anth), and 
+  Photosynthetic Quantum Yield (Φ_q).
+
+references:
+  - type: article
+    title: "CARBONICA: Advanced Planetary Carbon Accounting & Feedback Dynamics"
+    authors:
+      - family-names: Baladi
+        given-names: Samir
+    year: 2026
+    doi: 10.5281/zenodo.18995446
+    url: "https://doi.org/10.5281/zenodo.18995446"
+
+  - type: software
+    title: "CARBONICA Software"
+    authors:
+      - family-names: Baladi
+        given-names: Samir
+    year: 2026
+    doi: 10.5281/zenodo.18995446
+    url: "https://github.com/gitdeeper9/carbonica"
+    version: 1.0.0
+
+  - type: webpage
+    title: "CARBONICA Web Dashboard"
+    url: "https://carbonica.netlify.app"
+    year: 2026
+
+preferred-citation:
+  type: article
+  title: "CARBONICA: Advanced Planetary Carbon Accounting & Feedback Dynamics"
+  authors:
+    - family-names: Baladi
+      given-names: Samir
+  year: 2026
+  doi: 10.5281/zenodo.18995446
+  url: "https://doi.org/10.5281/zenodo.18995446"
+  journal: "Zenodo"
+  volume: "1.0.0"
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18995446
+    description: "CARBONICA Zenodo Archive"
+  - type: url
+    value: "https://github.com/gitdeeper9/carbonica"
+    description: "CARBONICA GitHub Repository"
+  - type: url
+    value: "https://carbonica.netlify.app"
+    description: "CARBONICA Web Dashboard"
+  - type: orcid
+    value: "0009-0003-8903-0029"
+    description: "Samir Baladi ORCID"
+
+repository: "https://github.com/gitdeeper9/carbonica"
+repository-artifact: "https://doi.org/10.5281/zenodo.18995446"
+contact:
+  - name: Samir Baladi
+    email: gitdeeper@gmail.com
+    orcid: "https://orcid.org/0009-0003-8903-0029"

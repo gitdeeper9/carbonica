@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel>=0.38"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carbonica"
+version = "1.0.0"
+description = "CARBONICA - Advanced Planetary Carbon Accounting & Feedback Dynamics"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Samir Baladi", email = "gitdeeper@gmail.com"}
+]
+keywords = [
+    "carbon-cycle", "climate-science", "earth-system",
+    "biogeochemistry", "permafrost", "ocean-carbon"
+]
+
+[project.urls]
+Homepage = "https://github.com/gitdeeper9/carbonica"
+Documentation = "https://carbonica.netlify.app/docs"
+Repository = "https://github.com/gitdeeper9/carbonica.git"
+DOI = "https://doi.org/10.5281/zenodo.18995446"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-ra -q"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true

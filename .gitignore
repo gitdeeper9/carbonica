@@ -1,0 +1,212 @@
+# INFRAS-CLOUD .gitignore
+# Atmospheric Infrasound & Severe Weather Acoustic Signatures
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+.installed.cfg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+htmlcov/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.hypothesis/
+.prof
+.profraw
+
+# ============================================
+# Virtual Environment
+# ============================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env
+.env.*
+!.env.example
+
+# ============================================
+# IDE
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-*
+*.code-workspace
+
+# ============================================
+# Jupyter Notebooks
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+*.ipynb
+!notebooks/*.ipynb
+!docs/source/*.ipynb
+
+# ============================================
+# Data
+# ============================================
+data/
+data-dev/
+*.h5
+*.hdf5
+*.nc
+*.netcdf
+*.mseed
+*.sac
+*.miniseed
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.db
+*.sqlite
+*.sqlite3
+*.mseed.lock
+*.h5.lock
+
+# ============================================
+# Logs
+# ============================================
+logs/
+logs-dev/
+*.log
+*.log.*
+*.tmp
+*.temp
+*.cache
+
+# ============================================
+# Models
+# ============================================
+models/*.h5
+models/*.pkl
+models/*.joblib
+models/pretrained/
+!models/README.md
+
+# ============================================
+# Docker
+# ============================================
+.dockerignore
+*.pid
+docker-compose.override.yml
+
+# ============================================
+# Documentation
+# ============================================
+docs/build/
+docs/source/_build/
+docs/source/api/
+docs/source/generated/
+site/
+
+# ============================================
+# OS
+# ============================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.bak
+*.old
+*.orig
+*.rej
+
+# ============================================
+# Secrets
+# ============================================
+*.key
+*.pem
+*.crt
+*.csr
+secrets.*
+*.secret
+*.password
+credentials.json
+*.env.local
+*.env.production
+
+# ============================================
+# Database
+# ============================================
+*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+
+# ============================================
+# Backups
+# ============================================
+*.backup
+*.back
+*.bkp
+backup/
+
+# ============================================
+# Testing
+# ============================================
+tests/output/
+tests/tmp/
+tests/data/generated/
+*.test
+*.testdata
+
+# ============================================
+# Node (for dashboard)
+# ============================================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+dashboard/build/
+dashboard/dist/
+
+# ============================================
+# Environment-specific
+# ============================================
+config/local.yaml
+config/development.yaml
+config/*.local.yaml
+*.local
+upload_*.py

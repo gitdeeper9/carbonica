@@ -1,0 +1,76 @@
+CARBONICA - Advanced Planetary Carbon Accounting & Feedback Dynamics
+Copyright (c) 2026 Samir Baladi
+
+This product includes software developed by:
+- Samir Baladi (Ronin Institute / Rite of Renaissance)
+
+--------------------------------------------------------------------------------
+ACKNOWLEDGMENTS
+--------------------------------------------------------------------------------
+
+This project uses data from the following sources:
+
+1. NOAA Global Monitoring Laboratory - Keeling Curve
+   https://gml.noaa.gov/ccgg/trends/
+   Data used under NOAA data use policy
+
+2. SOCAT (Surface Ocean CO₂ Atlas)
+   https://www.socat.info/
+   SOCAT is an international collaborative project
+
+3. GLODAP (Global Ocean Data Analysis Project)
+   https://www.glodap.info/
+   GLODAP is a product of the Global Ocean Observing System
+
+4. NASA Earth Observing System
+   - MODIS (Moderate Resolution Imaging Spectroradiometer)
+   - OCO-2 (Orbiting Carbon Observatory-2)
+   Data available through NASA Earthdata
+
+5. GTN-P (Global Terrestrial Network for Permafrost)
+   https://gtnp.arcticportal.org/
+   Supported by the International Permafrost Association
+
+6. Global Carbon Project
+   https://www.globalcarbonproject.org/
+   Future Earth research project
+
+7. FLUXNET
+   https://fluxnet.org/
+   Global network of eddy covariance towers
+
+8. ECMWF ERA5 Reanalysis
+   https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5
+   Copernicus Climate Change Service
+
+--------------------------------------------------------------------------------
+DEPENDENCIES
+--------------------------------------------------------------------------------
+
+This software uses the following open-source libraries:
+
+- NumPy: BSD license
+- SciPy: BSD license
+- Pandas: BSD license
+- Xarray: Apache 2.0 license
+- Matplotlib: BSD license
+- Scikit-learn: BSD license
+- TensorFlow: Apache 2.0 license (optional)
+- PyTorch: BSD license (optional)
+- Flask: BSD license (optional)
+- Dash: MIT license (optional)
+
+--------------------------------------------------------------------------------
+CONTACT
+--------------------------------------------------------------------------------
+
+Samir Baladi
+Principal Investigator
+Ronin Institute / Rite of Renaissance
+Email: gitdeeper@gmail.com
+ORCID: 0009-0003-8903-0029
+
+--------------------------------------------------------------------------------
+"This software is dedicated to Charles David Keeling and Roger Revelle,
+whose foundational work made this framework possible."
+--------------------------------------------------------------------------------

@@ -1,0 +1,135 @@
+# CARBONICA MANIFEST.in
+# Advanced Planetary Carbon Accounting & Feedback Dynamics
+# Version: 1.0.0 | DOI: 10.5281/zenodo.18995446
+
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include AUTHORS.md
+include CODE_OF_CONDUCT.md
+include CITATION.cff
+include .env.example
+include requirements.txt
+include requirements-dev.txt
+include pyproject.toml
+include setup.cfg
+include setup.py
+
+include Dockerfile
+include Dockerfile.dev
+include docker-compose.yml
+include docker-compose.dev.yml
+
+include .pre-commit-config.yaml
+include .readthedocs.yaml
+include .gitlab-ci.yml
+include .github/workflows/*.yml
+
+recursive-include carbonica *.py
+recursive-include carbonica *.pyx
+recursive-include carbonica *.pxd
+recursive-include carbonica *.so
+recursive-include carbonica *.dll
+recursive-include carbonica *.dylib
+
+recursive-include config *.yaml
+recursive-include config *.json
+recursive-include config *.toml
+recursive-include config/calibration *.json
+
+recursive-include data/sample *.csv
+recursive-include data/sample *.h5
+recursive-include data/sample *.nc
+recursive-include data/validation *.csv
+recursive-include data/validation *.h5
+recursive-include data/validation *.nc
+
+recursive-include tests *.py
+recursive-include tests/data *.csv
+recursive-include tests/data *.nc
+
+recursive-include docs *.md
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-include docs/source *.rst
+recursive-include docs/source *.py
+recursive-include docs/build/html *.html
+recursive-include docs/build/html *.js
+recursive-include docs/build/html *.css
+
+recursive-include scripts *.py
+recursive-include scripts *.sh
+
+recursive-include notebooks *.ipynb
+recursive-include notebooks *.md
+recursive-include notebooks/case_studies *.ipynb
+recursive-include notebooks/tutorials *.ipynb
+
+recursive-include dashboard *.js
+recursive-include dashboard *.css
+recursive-include dashboard *.html
+recursive-include dashboard/src *.js
+recursive-include dashboard/src *.jsx
+recursive-include dashboard/public *.html
+recursive-include dashboard/public *.ico
+
+recursive-include models *.h5
+recursive-include models *.pkl
+recursive-include models *.json
+recursive-include models/pretrained *.h5
+
+recursive-include web *.py
+recursive-include web/templates *.html
+recursive-include web/static *.css
+recursive-include web/static *.js
+recursive-include web/static *.png
+recursive-include web/static *.ico
+
+include versioneer.py
+include _version.py
+
+# Include license and copyright
+include LICENSES/*.txt
+include NOTICE
+
+# Exclude files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude .coverage
+global-exclude *.log
+global-exclude *.tmp
+global-exclude *.swp
+global-exclude *.swo
+global-exclude *.orig
+global-exclude *.rej
+global-exclude .cache
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .tox
+global-exclude .venv
+global-exclude venv
+global-exclude env
+global-exclude build
+global-exclude dist
+global-exclude *.egg-info
+global-exclude *.egg
+global-exclude .eggs
+global-exclude .ipynb_checkpoints
+global-exclude .vscode
+global-exclude .idea
+global-exclude *.db
+global-exclude *.sqlite
+global-exclude *.sqlite3
+global-exclude *.h5.tmp
+global-exclude *.nc.tmp
+global-exclude .env
+global-exclude .env.*
+global-exclude *.key
+global-exclude *.pem
+global-exclude *.crt
+global-exclude *.csr
+global-exclude secrets.*

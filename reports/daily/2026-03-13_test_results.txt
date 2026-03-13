@@ -1,0 +1,31 @@
+============================= test session starts ==============================
+platform android -- Python 3.13.12, pytest-9.0.2, pluggy-1.6.0
+rootdir: /storage/emulated/0/Download/CARBONICA
+configfile: pyproject.toml (WARNING: ignoring pytest config in setup.cfg!)
+plugins: xdist-3.8.0, cov-7.0.0, asyncio-1.3.0, mock-3.15.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 85 items
+
+tests/integration/test_full_pipeline.py .......                          [  8%]
+tests/integration/test_pcsi_calculation.py ......                        [ 15%]
+tests/unit/test_carbonica_engine.py ...........                          [ 28%]
+tests/unit/test_cusum.py .......                                         [ 36%]
+tests/unit/test_monte_carlo.py ......                                    [ 43%]
+tests/unit/test_ocean_sink.py .........                                  [ 54%]
+tests/unit/test_pcsi.py ....F..........                                  [ 71%]
+tests/unit/test_permafrost.py ..........                                 [ 83%]
+tests/unit/test_quantum_yield.py ........                                [ 92%]
+tests/unit/test_simple_stats.py ..                                       [ 95%]
+tests/validation/test_keeling_curve.py ....                              [100%]
+
+=================================== FAILURES ===================================
+______________________ TestPCSI.test_normalize_increasing ______________________
+tests/unit/test_pcsi.py:54: in test_normalize_increasing
+    assert pcsi.normalize('G_atm', 1.751) == 0.5  # Midpoint
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: assert 0.49999999999999994 == 0.5
+E    +  where 0.49999999999999994 = normalize('G_atm', 1.751)
+E    +    where normalize = PCSI(weights={'NPP': 0.16, 'S_ocean': 0.18, 'G_atm': 0.2, 'F_perma': 0.19, 'beta': 0.12, 'tau_soil': 0.07, 'E_anth': 0.05, 'Phi_q': 0.03}).normalize
+=========================== short test summary info ============================
+FAILED tests/unit/test_pcsi.py::TestPCSI::test_normalize_increasing - Asserti...
+========================= 1 failed, 84 passed in 0.47s =========================

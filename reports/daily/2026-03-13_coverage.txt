@@ -1,0 +1,67 @@
+..................................................F..................... [ 84%]
+.............                                                            [100%]
+=================================== FAILURES ===================================
+______________________ TestPCSI.test_normalize_increasing ______________________
+
+self = <tests.unit.test_pcsi.TestPCSI object at 0x74ac161910>
+
+    def test_normalize_increasing(self):
+        """Test normalization of increasing parameters"""
+        pcsi = PCSI()
+    
+        # G_atm: pre-industrial 0.002, critical 3.5
+        assert pcsi.normalize('G_atm', 0.002) == 0.0  # PI
+>       assert pcsi.normalize('G_atm', 1.751) == 0.5  # Midpoint
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert 0.49999999999999994 == 0.5
+E        +  where 0.49999999999999994 = normalize('G_atm', 1.751)
+E        +    where normalize = PCSI(weights={'NPP': 0.16, 'S_ocean': 0.18, 'G_atm': 0.2, 'F_perma': 0.19, 'beta': 0.12, 'tau_soil': 0.07, 'E_anth': 0.05, 'Phi_q': 0.03}).normalize
+
+tests/unit/test_pcsi.py:54: AssertionError
+=============================== warnings summary ===============================
+../../../../../data/data/com.termux/files/usr/lib/python3.13/site-packages/coverage/core.py:108
+  /data/data/com.termux/files/usr/lib/python3.13/site-packages/coverage/core.py:108: CoverageWarning: Couldn't import C tracer: No module named 'coverage.tracer' (no-ctracer); see https://coverage.readthedocs.io/en/7.13.4/messages.html#warning-no-ctracer
+    warn(f"Couldn't import C tracer: {IMPORT_ERROR}", slug="no-ctracer", once=True)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+______________ coverage: platform android, python 3.13.12-final-0 ______________
+
+Name                                            Stmts   Miss  Cover
+-------------------------------------------------------------------
+carbonica/__init__.py                               7      0   100%
+carbonica/carbonica_engine.py                      88     20    77%
+carbonica/cli/__init__.py                           3      3     0%
+carbonica/cli/main.py                              59     59     0%
+carbonica/data/__init__.py                          8      8     0%
+carbonica/data/loaders/__init__.py                  8      8     0%
+carbonica/data/loaders/gcp_loader.py               47     47     0%
+carbonica/data/loaders/glodap_loader.py            80     80     0%
+carbonica/data/loaders/gtnp_loader.py              67     67     0%
+carbonica/data/loaders/keeling_loader.py           60     60     0%
+carbonica/data/loaders/modis_loader.py             67     67     0%
+carbonica/data/loaders/sif_loader.py               84     84     0%
+carbonica/data/loaders/socat_loader.py             51     51     0%
+carbonica/models/__init__.py                        0      0   100%
+carbonica/modules/__init__.py                       5      0   100%
+carbonica/modules/carbon_budget.py                 60     37    38%
+carbonica/modules/ocean_sink.py                    69     24    65%
+carbonica/modules/permafrost_engine.py             69      9    87%
+carbonica/modules/quantum_yield_tracker.py         71     14    80%
+carbonica/pcsi.py                                  63      3    95%
+carbonica/statistics/__init__.py                    6      0   100%
+carbonica/statistics/cusum.py                      75      3    96%
+carbonica/statistics/monte_carlo.py                85     23    73%
+carbonica/statistics/pca_regression.py            110     99    10%
+carbonica/statistics/sem.py                        57     44    23%
+carbonica/statistics/simple_stats.py              106     65    39%
+carbonica/visualization/__init__.py                 5      5     0%
+carbonica/visualization/correlation_matrix.py     100    100     0%
+carbonica/visualization/parameter_plots.py        130    130     0%
+carbonica/visualization/pcsi_dashboard.py         143    143     0%
+carbonica/visualization/projection_plot.py        107    107     0%
+-------------------------------------------------------------------
+TOTAL                                            1890   1360    28%
+=========================== short test summary info ============================
+FAILED tests/unit/test_pcsi.py::TestPCSI::test_normalize_increasing - Asserti...
+1 failed, 84 passed, 1 warning in 1.73s
